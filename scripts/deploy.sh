@@ -10,9 +10,9 @@
 THIS_FILE_NAME='deploy.sh'
 
 function print_error() {
-    RED='\033[1;31m'    # 1-Bold attribute
-    NC='\033[0m'
-    echo -e "${bold}${RED}ERROR${normal}${NC}: $1"    
+    ERROR='\033[1;31m'
+    NORMAL='\033[0m'
+    echo -e "${ERROR}ERROR${NORMAL}: $1"    
 }
 
 if [ -e "${THIS_FILE_NAME}" ]; then
